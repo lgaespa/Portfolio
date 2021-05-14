@@ -28,10 +28,10 @@ function App() {
                   <div>
                     GABRIEL ESTEBAN
                   </div>
-                  <div style={{ fontSize: "40px" }}>
+                  <div >
                     PATIÑO LINAREZ
                   </div>
-                  <div>
+                  <div style={{fontSize:"21px"}}>
                     FULLSTACK DEVELOPER
                   </div>
                 </div>
