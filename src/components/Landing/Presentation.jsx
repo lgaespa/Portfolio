@@ -33,10 +33,10 @@ const Presentation = () => {
                 </div>
                 </div>
                 <div className="homeContainerRedes">
-                    <div>
+                    <div className="redesMail">
                         gabrielesteb4n@gmail.com
-                </div>
-                    <div>
+                    </div>
+                    <div className="redesLogos">
                         <ImLinkedin />
                         <GoMarkGithub />
                     </div>
