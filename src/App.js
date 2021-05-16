@@ -1,14 +1,12 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { BsArrowDown } from "react-icons/bs";
-import { ImLinkedin } from "react-icons/im";
-import { GoMarkGithub } from "react-icons/go";
 import React from 'react'
+import Presentation from "./components/Landing/Presentation";
+import { BsArrowDown } from "react-icons/bs";
+
 import './App.less';
 
 
 function App() {
-
-
 
   return (
     <div className="App">
@@ -21,41 +19,18 @@ function App() {
 
           <div className="BGiMAGE">
 
-            <ParallaxLayer offset={0} speed={0.7}>
-              <div className="homeContainer">
-                <div className="homeMenus">
-                  <h2 style={{ color: "rgb(51, 228, 235)", marginRight: "20px" }}>-menu</h2>
-                  <h1>About.</h1>
-                  <h1>Projects.</h1>
-                  <h1>Contact.</h1>
-                </div>
+            <Presentation />
 
-                <div className="homContainerName">
-                  <div>
-                    GABRIEL ESTEBAN
-                  </div>
-                  <div >
-                    PATIÑO LINAREZ
-                  </div>
-                  <div style={{ fontSize: "21px" }}>
-                    FULLSTACK DEVELOPER
-                  </div>
+            <ParallaxLayer offset={0.90} speed={0.1}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <div>
+                  Projects.
                 </div>
-                <div className="homeContainerRedes">
-                  <div>
-                    Gabriel ©
-                  </div>
-                  <div>
-                    <ImLinkedin />
-                    <GoMarkGithub />
-                  </div>
+                <div>
+                  Contact.
                 </div>
-
+                <BsArrowDown className="homeContainerScrollDownIcon" />
               </div>
-            </ParallaxLayer>
-
-            <ParallaxLayer offset={0.94} speed={0.1}>
-              <BsArrowDown className="homeContainerScrollDownIcon" />
             </ParallaxLayer>
 
           </div>
@@ -64,100 +39,61 @@ function App() {
 
 
         {/* --------------------------------------------------- SECOND PAGE --------------------------------------------------- */}
-        <ParallaxLayer offset={1} speed={1} className="homeCardContainers" />
+        <div className="secondRowContainer">
+          <ParallaxLayer offset={1} factor="2" speed={0.8} className="secondRowLayer" />
 
-        <ParallaxLayer offset={1.1} speed={0.1}>
-          <div>
+          <ParallaxLayer offset={1.2} speed={0.6}>
+            <h1 className="secondRowTitle">Projects</h1>
+          </ParallaxLayer>
 
-            <div style={{ fontSize: "50px", color: "white" }}>
-              <div className="containerRowProjectsTitle">
-                <div style={{ width: "20%" }}>
-                  SOME
-               </div>
-                <div className="containerProjectsMainTitle">
-                  SOME PROJECTS
-                </div>
-                <div style={{ width: "20%" }}>
-                  PROJECTS
-                </div>
+
+          <ParallaxLayer offset={1.4} speed={1.2}>
+            <div className="imageProject1Container">
+              <img className="imageProject1" src="./hotel.jpg" alt="not found" />
+              <div className="imageProjectText">
+                <h1>HENRY HOTEL</h1>
+                <p>BIENIDI OHSDOIAJ AIOJDO AIJDOIAHOD AH</p>
               </div>
-
-              <ParallaxLayer offset={0.8} speed={0.7}>
-
-                <ParallaxLayer offset={0.45} speed={0.3}>
-                  <div>
-                    <img className="imageProjects" src="/musicApi.png" alt="not found" />
-                  </div>
-                </ParallaxLayer>
-
-                <ParallaxLayer offset={0.9999} speed={0.3}>
-                  <div>
-                    <img className="imageProjects2" src="/henryHotel.png" alt="not found" />
-                  </div>
-                </ParallaxLayer>
-
-                <ParallaxLayer offset={1} speed={0.3}>
-                  <div>
-                    <img className="imageProjects3" src="/videoGame.png" alt="not found" />
-                  </div>
-                </ParallaxLayer>
-
-
-                <div className="container1st">
-
-                  <div style={{ display: "flex", flexDirection: "column", height: "100%", color: "black", alignItems: "center" }}>
-                    <div style={{ fontSize: "20px", width: "200px" }}>
-                      PROJECTS
-                    </div>
-
-                    <div style={{ width: "1px", height: "200px", backgroundColor: "rgb(197, 197, 197)" }}></div>
-
-                    <div style={{ fontSize: "20px", width: "200px" }}>
-                      MUSIC API
-                    </div>
-
-                    <div style={{ width: "1px", height: "300px", backgroundColor: "rgb(197, 197, 197)" }}></div>
-
-                    <div style={{ fontSize: "20px", width: "200px" }}>
-                      HENRY HOTEL
-                    </div>
-
-                    <div style={{ width: "1px", height: "300px", backgroundColor: "rgb(197, 197, 197)" }}></div>
-
-                    <div style={{ fontSize: "20px", width: "200px" }}>
-                      VIDEOGAMES API
-                    </div>
-                  </div>
-
-                </div>
-
-              </ParallaxLayer>
             </div>
-          </div>
-        </ParallaxLayer>
+          </ParallaxLayer>
 
-        {/* <ParallaxLayer offset={2.5} speed={0.1}>
-          <div>
-
-            <div style={{ fontSize: "50px", color: "white" }}>
-              <div style={{ border: "7px solid rgb(55, 55, 63)", width: "480px", marginLeft: "35%", fontSize: "55px", fontWeight: "700" }}>
-                SOME PROJECTS
+          <ParallaxLayer offset={1.999} speed={1.2}>
+            <div className="imageProject2Container">
+              <img className="imageProject2" src="./music.jpg" alt="not found" />
+              <div className="imageProjectText">
+                <h1>MusicAPI</h1>
+                <p>BIENIDI OHSDOIAJ AIOJDO AIJDOIAHOD AH</p>
               </div>
-              <ParallaxLayer offset={0.8} speed={0.7}>
-                <div className="container1st">
-
-                  <div>
-
-                  </div>
-                </div>
-
-              </ParallaxLayer>
             </div>
-          </div>
-        </ParallaxLayer> */}
+          </ParallaxLayer>
 
+          <ParallaxLayer offset={1.999} speed={1.2}>
+            <div className="imageProject3Container">
+              <img className="imageProject3" src="./games.jpg" alt="not found" />
+              <div className="imageProjectText">
+                <h1>GameLibrary</h1>
+                <p>BIENIDI OHSDOIAJ AIOJDO AIJDOIAHOD AH</p>
+              </div>
+            </div>
+          </ParallaxLayer>
 
+        </div>
         {/* --------------------------------------------------- THIRD PAGE --------------------------------------------------- */}
+
+
+        <ParallaxLayer offset={2} speed={2} className="thirdRowContainer" />
+
+        <ParallaxLayer
+          offset={2}
+          speed={0.5}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            color: 'white',
+          }}>
+          <p>Scroll up</p>
+        </ParallaxLayer>
 
 
       </Parallax>
