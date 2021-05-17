@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ParallaxLayer } from "@react-spring/parallax";
-import { Modal, Button } from "antd";
+import { Modal } from "antd";
 import "./Projects.less";
 
 const Projects = () => {
