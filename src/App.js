@@ -1,8 +1,6 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import React from 'react'
 import Presentation from "./components/Landing/Presentation";
-import { BsArrowDown } from "react-icons/bs";
-
 import './App.less';
 
 
@@ -11,28 +9,8 @@ function App() {
     return (
         <div className="App">
             <Parallax pages={3} style={{ top: '0', left: '0' }}>
-
-
                 {/* --------------------------------------------------- FIRST PAGE --------------------------------------------------- */}
-
-                <ParallaxLayer offset={0} speed={1} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <div className="BGiMAGE">
-                        <Presentation />
-                        <ParallaxLayer offset={0.90} speed={0.1}>
-                            <div className="homeContainerScrollText">
-                                <div>
-                                    Projects.
-                               </div>
-                                <div>
-                                    Contact.
-                                </div>
-                                <BsArrowDown className="homeContainerScrollDownIcon" />
-                            </div>
-                        </ParallaxLayer>
-                    </div>
-                </ParallaxLayer>
-
-
+                <Presentation />
                 {/* --------------------------------------------------- SECOND PAGE --------------------------------------------------- */}
                 <div className="secondRowContainer">
                     <ParallaxLayer offset={1} factor="2" speed={0.8} className="secondRowLayer" />
