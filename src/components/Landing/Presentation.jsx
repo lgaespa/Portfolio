@@ -25,7 +25,6 @@ const Presentation = () => {
             </div>
 
             <div className="homeMenus">
-              <h2 style={{ color: "#585d8b", marginRight: "20px" }}>-menu</h2>
               <h1>Projects.</h1>
               <h1>Contact.</h1>
             </div>
