@@ -1,9 +1,10 @@
 import React from "react";
-// import { ImLinkedin } from "react-icons/im";
-// import { GoMarkGithub } from "react-icons/go";
-// import { Button } from "antd";
+import { ImLinkedin } from "react-icons/im";
+import { GoMarkGithub } from "react-icons/go";
+import { Button } from "antd";
 import { ParallaxLayer } from "@react-spring/parallax";
 import { BsArrowDown } from "react-icons/bs";
+import { AiFillMail } from "react-icons/ai";
 import "./Presentation.less";
 
 const Presentation = () => {
@@ -22,12 +23,30 @@ const Presentation = () => {
           <div className="homeContainer">
             <div className="logoNavContainer">
               <img className="logoNav" src="/logoGP2.png" alt="not found" />
+
+              <div className="presentationButtonsContainer">
+                <Button
+                  type="text"
+                  href={"https://linkedin.com/in/gabrielEstebanP"}
+                  target="_blank"
+                >
+                  <ImLinkedin className="presentationButtons" />
+                </Button>
+                <Button
+                  type="text"
+                  href={"https://github.com/lgaespa"}
+                  target="_blank"
+                >
+                  <GoMarkGithub className="presentationButtons" />
+                </Button>
+
+                <Button href="mailto:gabrielesteb4n@gmail.com" type="text">
+                  <AiFillMail className="presentationButtons" />
+                </Button>
+              </div>
             </div>
 
-            <div className="homeMenus">
-              <h1>Projects.</h1>
-              <h1>Contact.</h1>
-            </div>
+            <div className="homeMenus"></div>
 
             <div className="homeContainerName">
               <div>GABRIEL ESTEBAN</div>
@@ -36,25 +55,14 @@ const Presentation = () => {
             </div>
             <div className="homeContainerRedes">
               <div className="redesMail">gabrielesteb4n@gmail.com</div>
-              <div className="redesLogos">
-                {/* <Button
-                  type="text"
-                  href={"https://linkedin.com/in/gabrielEstebanP"}
-                  target="_blank"
-                >
-                  <ImLinkedin />
-                </Button>
-                <GoMarkGithub
-                  href={"https://linkedin.com/in/gabrielEstebanP"}
-                /> */}
-              </div>
+              <div className="redesLogos"></div>
             </div>
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.9} speed={0.1}>
           <div className="homeContainerScrollText">
-            <div>Projects.</div>
-            <div>Contact.</div>
+            <div>Projectos.</div>
+            <div>Contacto.</div>
             <BsArrowDown className="homeContainerScrollDownIcon" />
           </div>
         </ParallaxLayer>

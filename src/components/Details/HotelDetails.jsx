@@ -77,7 +77,7 @@ const HotelDetails = () => {
       <div className="modalLinksContainer">
         <div>
           <Button
-            type="text"
+            className="modalButtons"
             href={"https://github.com/lgaespa/ecommerce-FT10-G2"}
             target="_blank"
           >
@@ -87,7 +87,7 @@ const HotelDetails = () => {
         </div>
         <div>
           <Button
-            type="text"
+            className="modalButtons"
             href={"https://henryhotel.hruiz.com/"}
             target="_blank"
           >

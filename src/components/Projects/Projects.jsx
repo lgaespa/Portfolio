@@ -31,7 +31,7 @@ const Projects = () => {
       />
 
       <ParallaxLayer offset={1.2} speed={0.6}>
-        <h1 className="secondRowTitle">Projects</h1>
+        <h1 className="secondRowTitle">Projectos</h1>
       </ParallaxLayer>
 
       <ParallaxLayer offset={1.4} speed={1.2}>
@@ -42,6 +42,7 @@ const Projects = () => {
             src="./hotel.jpg"
             alt="not found"
           />
+          <div className="imageDetails">Click image for more details</div>
           <div className="imageProjectText">
             <h1>HENRY HOTEL</h1>
           </div>
@@ -56,6 +57,7 @@ const Projects = () => {
             src="./music.jpg"
             alt="not found"
           />
+          <div className="imageDetails">Click image for more details</div>
           <div className="imageProjectText">
             <h1>MusicAPI</h1>
           </div>
@@ -70,6 +72,7 @@ const Projects = () => {
             src="./games.jpg"
             alt="not found"
           />
+          <div className="imageDetails">Click image for more details</div>
           <div className="imageProjectText">
             <h1>GameLibrary</h1>
           </div>

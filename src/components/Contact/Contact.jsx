@@ -12,7 +12,7 @@ const Contact = () => {
       <ParallaxLayer offset={2} speed={2} className="thirdRowContainer" />
 
       <ParallaxLayer offset={2} speed={0.7}>
-        <h1 className="thirdRowTitle">Contact</h1>
+        <h1 className="thirdRowTitle">Contacto</h1>
       </ParallaxLayer>
 
       <ParallaxLayer
@@ -38,6 +38,7 @@ const Contact = () => {
                     <ul>PostgreSQL</ul>
                     <ul>Typescript</ul>
                     <ul>Supabase</ul>
+                    <ul>HTML/CSS</ul>
                   </li>
                   <li>
                     <ul>React JS</ul>
@@ -45,12 +46,13 @@ const Contact = () => {
                     <ul>AntDesign</ul>
                     <ul>Less</ul>
                     <ul>Node JS</ul>
+                    <ul>GIT</ul>
                   </li>
                 </div>
               </div>
               <Divider type="vertical" className="dividerCardAboutMe"></Divider>
               <div>
-                <h1>CONTACT</h1>
+                <h1>CONTACTO</h1>
                 <div className="cardAboutContact">
                   <Button
                     style={{ marginBottom: "0.7rem", marginRight: "0.6rem" }}

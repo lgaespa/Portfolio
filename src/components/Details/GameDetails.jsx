@@ -65,7 +65,7 @@ const GameDetails = () => {
       <div className="modalLinksContainer">
         <div>
           <Button
-            type="text"
+            className="modalButtons"
             href={"https://github.com/lgaespa/GameLibrary-App"}
             target="_blank"
           >
