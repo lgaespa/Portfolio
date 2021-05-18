@@ -11,12 +11,12 @@ const Contact = () => {
     <>
       <ParallaxLayer offset={2} speed={2} className="thirdRowContainer" />
 
-      <ParallaxLayer offset={2} speed={0.8}>
+      <ParallaxLayer offset={2} speed={0.7}>
         <h1 className="thirdRowTitle">Contact</h1>
       </ParallaxLayer>
 
       <ParallaxLayer
-        offset={2}
+        offset={2.1}
         speed={1.3}
         style={{
           display: "flex",
