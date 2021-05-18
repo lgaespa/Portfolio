@@ -51,7 +51,7 @@ const MusicDetails = () => {
         <div>
           <Button
             type="text"
-            href={"https://github.com/lgaespa/musicApi-1"}
+            href={"https://github.com/lgaespa/musicApi"}
             target="_blank"
           >
             MusicAPI

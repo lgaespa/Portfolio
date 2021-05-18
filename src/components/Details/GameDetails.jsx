@@ -52,7 +52,7 @@ const GameDetails = () => {
         <div>
           <Button
             type="text"
-            href={"https://github.com/lgaespa/musicApi-1"}
+            href={"https://github.com/lgaespa/GameLibrary-App"}
             target="_blank"
           >
             GameLibrary
