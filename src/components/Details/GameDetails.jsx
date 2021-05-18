@@ -21,7 +21,9 @@ const GameDetails = () => {
       <Carousel {...settings}>
         {!isLoaded && (
           <>
-            <Skeleton />
+            <div className="skeleton1">
+              <Skeleton />
+            </div>
             <Skeleton
               className="slidesImages"
               style={{ marginBottom: "3rem" }}
