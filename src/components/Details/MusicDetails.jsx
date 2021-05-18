@@ -1,5 +1,5 @@
-import React from "react";
-import { Button, Carousel } from "antd";
+import React, { useState } from "react";
+import { Button, Carousel, Skeleton } from "antd";
 import { GoMarkGithub } from "react-icons/go";
 import "./HotelDetails.less";
 
@@ -12,13 +12,25 @@ const settings = {
 };
 
 const MusicDetails = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <div className="carouselContainer">
       <div className="modalTitle">MusicAPI</div>
 
       <Carousel {...settings}>
+        {!isLoaded && (
+          <>
+            <Skeleton />
+            <Skeleton
+              className="slidesImages"
+              style={{ marginBottom: "3rem" }}
+            />
+          </>
+        )}
         <div className="slideContainer">
           <img
+            onLoad={() => setIsLoaded(true)}
             className="slidesImages"
             src="./projects/music1.png"
             alt="Img not found"
