@@ -3,7 +3,7 @@ import { ImLinkedin } from "react-icons/im";
 import { GoMarkGithub } from "react-icons/go";
 import { ParallaxLayer } from "@react-spring/parallax";
 import { BsArrowDown } from "react-icons/bs";
-
+import { Button } from "antd";
 import "./Presentation.less";
 
 const Presentation = () => {
@@ -40,8 +40,16 @@ const Presentation = () => {
             <div className="homeContainerRedes">
               <div className="redesMail">gabrielesteb4n@gmail.com</div>
               <div className="redesLogos">
-                <ImLinkedin />
-                <GoMarkGithub />
+                <Button
+                  type="text"
+                  href={"https://linkedin.com/in/gabrielEstebanP"}
+                  target="_blank"
+                >
+                  <ImLinkedin />
+                </Button>
+                <GoMarkGithub
+                  href={"https://linkedin.com/in/gabrielEstebanP"}
+                />
               </div>
             </div>
           </div>

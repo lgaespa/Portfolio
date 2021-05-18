@@ -1,28 +1,31 @@
 import React, { useState } from "react";
 import { ParallaxLayer } from "@react-spring/parallax";
 import { Modal } from "antd";
+import HotelDetails from "../Details/HotelDetails";
+import MusicDetails from "../Details/MusicDetails";
+import GameDetails from "../Details/GameDetails";
 import "./Projects.less";
 
 const Projects = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isModalVisible2, setIsModalVisible2] = useState(false);
+  const [isModalVisible3, setIsModalVisible3] = useState(false);
 
   const showModal = () => {
-    setIsModalVisible(true);
+    setIsModalVisible(!isModalVisible);
   };
-
-  const handleOk = () => {
-    setIsModalVisible(false);
+  const showModal2 = () => {
+    setIsModalVisible2(!isModalVisible2);
   };
-
-  const handleCancel = () => {
-    setIsModalVisible(false);
+  const showModal3 = () => {
+    setIsModalVisible3(!isModalVisible3);
   };
 
   return (
     <div className="secondRowContainer">
       <ParallaxLayer
         offset={1}
-        factor="2"
+        factor={2}
         speed={0.8}
         className="secondRowLayer"
       />
@@ -41,7 +44,6 @@ const Projects = () => {
           />
           <div className="imageProjectText">
             <h1>HENRY HOTEL</h1>
-            <p>BIENIDI OHSDOIAJ AIOJDO AIJDOIAHOD AH</p>
           </div>
         </div>
       </ParallaxLayer>
@@ -49,14 +51,13 @@ const Projects = () => {
       <ParallaxLayer offset={1.999} speed={1.3}>
         <div className="imageProject2Container">
           <img
-            onClick={showModal}
+            onClick={showModal2}
             className="imageProject2"
             src="./music.jpg"
             alt="not found"
           />
           <div className="imageProjectText">
             <h1>MusicAPI</h1>
-            <p>BIENIDI OHSDOIAJ AIOJDO AIJDOIAHOD AH</p>
           </div>
         </div>
       </ParallaxLayer>
@@ -64,27 +65,40 @@ const Projects = () => {
       <ParallaxLayer offset={2} speed={1.4}>
         <div className="imageProject3Container">
           <img
-            onClick={showModal}
+            onClick={showModal3}
             className="imageProject3"
             src="./games.jpg"
             alt="not found"
           />
           <div className="imageProjectText">
             <h1>GameLibrary</h1>
-            <p>BIENIDI OHSDOIAJ AIOJDO AIJDOIAHOD AH</p>
           </div>
         </div>
       </ParallaxLayer>
 
       <Modal
-        title="Basic Modal"
+        width={660}
         visible={isModalVisible}
-        onOk={handleOk}
-        onCancel={handleCancel}
+        onCancel={showModal}
+        footer={null}
       >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <HotelDetails />
+      </Modal>
+      <Modal
+        width={660}
+        visible={isModalVisible2}
+        onCancel={showModal2}
+        footer={null}
+      >
+        <MusicDetails />
+      </Modal>
+      <Modal
+        width={660}
+        visible={isModalVisible3}
+        onCancel={showModal3}
+        footer={null}
+      >
+        <GameDetails />
       </Modal>
     </div>
   );
