@@ -54,31 +54,52 @@ const Contact = () => {
               <div>
                 <h1>CONTACTO</h1>
                 <div className="cardAboutContact">
+                  <div>
+                    <Button
+                      style={{ marginBottom: "0.7rem", marginRight: "0.6rem" }}
+                      className="contactButtons"
+                      href={"https://linkedin.com/in/gabrielEstebanP"}
+                      target="_blank"
+                    >
+                      LinkedIn
+                      <ImLinkedin style={{ marginLeft: "0.6rem" }} />
+                    </Button>
+                    <Button
+                      href={"https://github.com/lgaespa"}
+                      target="_blank"
+                      className="contactButtons"
+                    >
+                      Github
+                      <GoMarkGithub style={{ marginLeft: "0.6rem" }} />
+                    </Button>
+                  </div>
                   <Button
-                    style={{ marginBottom: "0.7rem", marginRight: "0.6rem" }}
+                    href="mailto:gabrielesteb4n@gmail.com"
                     className="contactButtons"
-                    href={"https://linkedin.com/in/gabrielEstebanP"}
-                    target="_blank"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
                   >
-                    LinkedIn
-                    <ImLinkedin style={{ marginLeft: "0.6rem" }} />
+                    gabrielesteb4n@gmail.com{" "}
+                    <AiFillMail style={{ marginLeft: "0.6rem" }} />
                   </Button>
                   <Button
-                    href={"https://github.com/lgaespa"}
+                    style={{
+                      marginTop: "0.7rem",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                    href="https://drive.google.com/drive/folders/15_qNEU5s4sql8DV0Pp85Qcagp-QdBSyZ"
                     target="_blank"
                     className="contactButtons"
                   >
-                    Github
-                    <GoMarkGithub style={{ marginLeft: "0.6rem" }} />
+                    Descargar CV
+                    <AiFillMail style={{ marginLeft: "0.6rem" }} />
                   </Button>
                 </div>
-                <Button
-                  href="mailto:gabrielesteb4n@gmail.com"
-                  className="contactButtons"
-                >
-                  gabrielesteb4n@gmail.com{" "}
-                  <AiFillMail style={{ marginLeft: "0.6rem" }} />
-                </Button>
               </div>
             </div>
           </div>

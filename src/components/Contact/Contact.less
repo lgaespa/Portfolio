@@ -64,6 +64,7 @@
       .cardAboutContact {
         font-size: 1rem;
         display: flex;
+        flex-direction: column;
         .contactButtons {
           background: #525252;
           border: none !important;
@@ -92,74 +93,8 @@
     justify-content: center;
 
     .cardAboutMe {
-      height: 35rem;
+      height: 42rem;
       width: 50%;
-      border-radius: 3px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-
-      .imagenProfile {
-        width: 28%;
-        border-radius: 100px;
-        margin-top: 2.4rem;
-      }
-
-      .cardAboutMeContent {
-        width: 100%;
-        margin-top: 2%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-
-        .cardAbouSkills {
-          display: flex;
-          text-align: left;
-          font-size: 1rem;
-          margin-top: 24%;
-          * {
-            margin-top: -0.7rem !important;
-          }
-        }
-        .dividerCardAboutMe {
-          height: 90%;
-          margin-top: 1.3rem;
-        }
-        .cardAboutContact {
-          font-size: 1rem;
-          display: flex;
-          .contactButtons {
-            border: none !important;
-          }
-        }
-        .contactButtons {
-          border: none !important;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .thirdRowTitle {
-    font-size: 60px;
-    font-weight: 300;
-    color: rgb(117, 117, 117);
-  }
-
-  .thirdRow {
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .cardAboutMe {
-      height: 37rem;
-      width: 70%;
       border-radius: 3px;
       display: flex;
       flex-direction: column;
@@ -210,6 +145,73 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .thirdRowTitle {
+    font-size: 60px;
+    font-weight: 300;
+    color: rgb(117, 117, 117);
+  }
+
+  .thirdRow {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cardAboutMe {
+      height: 41rem;
+      width: 70%;
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      .imagenProfile {
+        width: 28%;
+        border-radius: 100px;
+        margin-top: 2.4rem;
+      }
+
+      .cardAboutMeContent {
+        width: 100%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+
+        .cardAbouSkills {
+          display: flex;
+          text-align: left;
+          font-size: 0.8rem;
+          margin-top: 24%;
+          margin-left: -2.5rem;
+          * {
+            margin-top: -0.7rem !important;
+          }
+        }
+        .dividerCardAboutMe {
+          height: 90%;
+          margin-top: 1.3rem;
+        }
+        .cardAboutContact {
+          font-size: 1rem;
+          display: flex;
+          .contactButtons {
+            border: none !important;
+          }
+        }
+        .contactButtons {
+          border: none !important;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 500px) {
   .thirdRow {
     width: 100vw;
@@ -219,7 +221,7 @@
     justify-content: center;
 
     .cardAboutMe {
-      height: 37rem;
+      height: 42rem;
       width: 90%;
       border-radius: 3px;
       display: flex;
@@ -245,7 +247,7 @@
         .cardAbouSkills {
           display: flex;
           text-align: left;
-          font-size: 1rem;
+          font-size: 0.9rem;
           margin-top: 24%;
           margin-left: -2.5rem;
           * {
